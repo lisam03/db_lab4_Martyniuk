@@ -7,7 +7,7 @@ CREATE TABLE drivers
   driver_nationality VARCHAR(100),
   PRIMARY KEY (driver_id)
 );
-
+  
 CREATE TABLE constructors
 (
   constructor_id INT NOT NULL,
