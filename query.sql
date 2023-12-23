@@ -9,7 +9,7 @@ SELECT driver_nationality as Nationality, COUNT(driver_id) AS Total
 	FROM drivers
 GROUP BY driver_nationality;
 
---Вивести графік залежності балів від фінальної позиції, на яку приїхав пілот
+--Вивести залежність балів від фінальної позиції, на яку приїхав пілот
 SELECT DISTINCT final_position as Position, points 
 	FROM results
 GROUP BY final_position, points
