@@ -1,19 +1,19 @@
 -- Заповнення таблиці drivers
-INSERT INTO drivers (driver_id, driver_forename, driver_surname, driver_number, driver_nationality)
+INSERT INTO drivers (driverId, number, forename, surname, nationality)
 VALUES
-  (1, 'Lewis', 'Hamilton', 44, 'British'),
-  (847, 'George', 'Russel', 63, 'British'),
-  (830, 'Max', 'Versteppen', 33, 'Dutch'),
-  (815, 'Sergio', 'Perez', 11, 'Mexican'),
-  (844, 'Charles', 'Leclerc', 16, 'Monegasque'),
-  (832, 'Carlos', 'Sainz', 55, 'Spanish'),
-  (846, 'Lando', 'Norris', 4, 'British'),
-  (857, 'Oscar', 'Piastri', 81, 'Australian'),
-  (840, 'Lance', 'Stroll', 18, 'Canadian'),
-  (4, 'Fernando', 'Alonso', 14, 'Spanish');
+  (1, 44, 'Lewis', 'Hamilton', 'British'),
+  (847, 63, 'George', 'Russel', 'British'),
+  (830, 33, 'Max', 'Versteppen', 'Dutch'),
+  (815, 11, 'Sergio', 'Perez', 'Mexican'),
+  (844, 16, 'Charles', 'Leclerc', 'Monegasque'),
+  (832, 55, 'Carlos', 'Sainz', 'Spanish'),
+  (846, 4, 'Lando', 'Norris', 'British'),
+  (857, 81, 'Oscar', 'Piastri', 'Australian'),
+  (840, 18, 'Lance', 'Stroll', 'Canadian'),
+  (4, 14, 'Fernando', 'Alonso', 'Spanish');
   
   -- Заповнення таблиці constructors
-INSERT INTO constructors (constructor_id, constructor_name)
+INSERT INTO constructors (constructorId, name)
 VALUES
   (1, 'McLaren'),
   (6, 'Ferrari'), 
@@ -22,7 +22,7 @@ VALUES
   (117, 'Aston Martin');
 
   -- Заповнення таблиці races
-INSERT INTO races (race_id, race_year, race_name)
+INSERT INTO races (raceId, year, name)
 VALUES
   (1105, 2023, 'Spanish Grand Prix'),
   (1109, 2023, 'Hungarian Grand Prix'),
@@ -36,7 +36,7 @@ VALUES
   (1108, 2023, 'British Grand Prix');
   
   -- Заповнення таблиці results
-INSERT INTO results (result_id, race_id, driver_id, constructor_id, final_position, points)
+INSERT INTO results (resultId, raceId, driverId, constructorId, position, points)
 VALUES
   (25966, 1105, 830, 9, 1, 26),
   (26031, 1110, 815, 9, 2, 18),
